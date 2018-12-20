@@ -3,22 +3,27 @@ namespace MediaTypes
 {
     class program
     {
-static void Main(string[] args)
-{
-    var Album = new album();
-    Album.Title = "Yellow Submarine";
-    Album.Artist = "The Beatles";
+        static void Main(string[] args)
+        {
 
-    var Book = new book();
-    Book.Title = "Harry Potter";
-    Book.Author = "Person";
 
-    var Movie = new movie();
-    Movie.Title = "Alien";
-    Movie.Genre = "SciFi";
+            var Book1 = new book("Harry Potter", "Person");
+            var Book2 = new book("Harry Potter 2", "Person");
+            var Book3 = new book("Harry Potter 3", "Person");
 
-    Console.WriteLine("Movie we added:"+ Movie.Title);
-}
+
+
+
+            Console.WriteLine(Book1.GetDisplayText());
+
+            Console.WriteLine(Book2.GetDisplayText());
+
+            Book1.Loan("Taylor");
+            Console.WriteLine(Book1.GetDisplayText());
+            Book1.Return();
+            Console.WriteLine(Book1.GetDisplayText());
+
+        }
     }
-    
+
 }
