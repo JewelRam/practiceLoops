@@ -1,0 +1,11 @@
+C:\Users\Your Butt\workspace\csharp\practiceLoops\obj\Debug\netcoreapp2.1\MediaTypes.csprojAssemblyReference.cache
+C:\Users\Your Butt\workspace\csharp\practiceLoops\obj\Debug\netcoreapp2.1\MediaTypes.csproj.CoreCompileInputs.cache
+C:\Users\Your Butt\workspace\csharp\practiceLoops\obj\Debug\netcoreapp2.1\MediaTypes.AssemblyInfoInputs.cache
+C:\Users\Your Butt\workspace\csharp\practiceLoops\obj\Debug\netcoreapp2.1\MediaTypes.AssemblyInfo.cs
+C:\Users\Your Butt\workspace\csharp\practiceLoops\bin\Debug\netcoreapp2.1\MediaTypes.deps.json
+C:\Users\Your Butt\workspace\csharp\practiceLoops\bin\Debug\netcoreapp2.1\MediaTypes.runtimeconfig.json
+C:\Users\Your Butt\workspace\csharp\practiceLoops\bin\Debug\netcoreapp2.1\MediaTypes.runtimeconfig.dev.json
+C:\Users\Your Butt\workspace\csharp\practiceLoops\bin\Debug\netcoreapp2.1\MediaTypes.dll
+C:\Users\Your Butt\workspace\csharp\practiceLoops\bin\Debug\netcoreapp2.1\MediaTypes.pdb
+C:\Users\Your Butt\workspace\csharp\practiceLoops\obj\Debug\netcoreapp2.1\MediaTypes.dll
+C:\Users\Your Butt\workspace\csharp\practiceLoops\obj\Debug\netcoreapp2.1\MediaTypes.pdb

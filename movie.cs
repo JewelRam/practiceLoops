@@ -2,7 +2,7 @@ namespace MediaTypes
 {
    class movie 
    {
-       public string Titile;
+       public string Title;
        public string Genre;
    } 
 }
