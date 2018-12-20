@@ -1,33 +1,27 @@
 namespace MediaTypes
 {
-    class book
+    class book : MediaTypes
     {
-        public string Title;
         public string Author;
-        public string Loanee;
-        public bool Borrowed;
+       
 
-        public book(string title, string author)
+        public book(string title, string author) 
+        : base(title)
         {
-            Title = title;
             Author = author;
         }
-        public void Loan(string loanee )
-        {
-            Loanee = loanee;
-            Borrowed = true;
-        }
-        public void Return()
-        {
-            Loanee = null;
-            Borrowed = false;
-        }
+      
         public string GetDisplayText()
         {
             string text = "Book Title: " + Title + "by: " + Author;
             if (Borrowed)
             {
+                if (!string.IsNullOrEmpty(Loanee))
+                {
                 text += "(Currently Borrowed by: " + Loanee + ")";
+                } else {
+                    text = text += "(Currently Borrowed)";
+                }
             }
             return text;
         }

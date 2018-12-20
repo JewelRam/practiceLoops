@@ -1,14 +1,29 @@
 namespace MediaTypes
 {
-   class movie 
-   {
-       public string Title;
-       public string Genre;
+    class movie : MediaTypes
+    {
+        public string Genre;
 
         public movie(string title, string genre)
+                        : base(title)
+
         {
-            Title = title;
             Genre = genre;
         }
-   } 
+
+        public string GetDisplayText()
+        {
+            string text = "Movie Title: " + Title + "which is: " + Genre;
+            if (Borrowed)
+            {
+                if (!string.IsNullOrEmpty(Loanee))
+                {
+                text += "(Currently Borrowed by: " + Loanee + ")";
+                } else {
+                    text = text += "(Currently Borrowed)";
+                }
+            }
+            return text;
+        }
+    }
 }

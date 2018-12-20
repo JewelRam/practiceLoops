@@ -19,7 +19,10 @@ namespace MediaTypes
             Console.WriteLine(Book2.GetDisplayText());
 
             Book1.Loan("Taylor");
+            Book2.Loan();
             Console.WriteLine(Book1.GetDisplayText());
+                        Console.WriteLine(Book2.GetDisplayText());
+
             Book1.Return();
             Console.WriteLine(Book1.GetDisplayText());
 
