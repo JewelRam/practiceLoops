@@ -1,3 +1,4 @@
+using System;
 namespace MediaTypes
 {
     class MediaTypes
@@ -8,6 +9,10 @@ namespace MediaTypes
 
         public MediaTypes(string title)
         {
+            if(string.IsNullOrEmpty(title))
+            {
+              throw new Exception("A media type must have a title!");  
+            }
             Title = title;
         }
           public void Loan() 
