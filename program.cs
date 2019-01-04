@@ -7,21 +7,21 @@ namespace MediaTypes
         {
             try
             {
-                MediaTypes[] items =
-                {
-                     new book("Harry Potter", "Person"),
+                var mediaLibrary = new mediaLibrary(new MediaTypes[]{
+               new book("Harry Potter", "Person"),
                 new book("Harry Potter 2", "Person"),
                 new book("Harry Potter 3", "Person"),
-                                new album("Paint It Black", "Rolling Stones")
+                new album("Paint It Black", "Rolling Stones")
+});
 
-            };
 
 
-                DetectMediaType(items[0]);
-                DetectMediaType(items[1]);
-                Display(items[1]);
+                DetectMediaType(mediaLibrary.GetItemAt(1));
+                DetectMediaType(mediaLibrary.GetItemAt(0));
+                DetectMediaType(mediaLibrary.GetItemAt(2));
 
-                items[1].Loan("Taylor");
+                Display(mediaLibrary.GetItemAt(0));
+
 
             }
             catch (Exception ex)
