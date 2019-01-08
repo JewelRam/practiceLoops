@@ -12,6 +12,8 @@ namespace MediaTypes
                 new book("Harry Potter 2", "Person"),
                 new book("Harry Potter 3", "Person"),
                 new album("Paint It Black", "Rolling Stones")
+                                new album("something", "Rush")
+
 });
 
 
