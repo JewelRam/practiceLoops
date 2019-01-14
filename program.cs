@@ -11,18 +11,17 @@ namespace MediaTypes
                new book("Harry Potter", "Person"),
                 new book("Harry Potter 2", "Person"),
                 new book("Harry Potter 3", "Person"),
-                new album("Paint It Black", "Rolling Stones")
+                new album("Paint It Black", "Rolling Stones"),
                                 new album("something", "Rush")
 
 });
 
-
+mediaLibrary.DisplayItems();
 
                 DetectMediaType(mediaLibrary.GetItemAt(1));
                 DetectMediaType(mediaLibrary.GetItemAt(0));
                 DetectMediaType(mediaLibrary.GetItemAt(2));
 
-                Display(mediaLibrary.GetItemAt(0));
 
 
             }
@@ -34,31 +33,13 @@ namespace MediaTypes
 
         }
 
-        static void Display(MediaTypes item)
-        {
-            if (item is album)
-            {
-
-                Console.WriteLine(((album)item).GetDisplayText());
-            }
-            else if (item is book)
-            {
-                Console.WriteLine(((book)item).GetDisplayText());
-
-
-            }
-            else if (item is movie)
-            {
-                Console.WriteLine(((movie)item).GetDisplayText());
-
-            }
-            else
-            {
-                throw new Exception("unexpected media type");
-            }
-        }
         static void DetectMediaType(MediaTypes item)
         {
+            if (item == null)
+            {
+                return;
+            }
+
             if (item is album)
             {
                 Console.WriteLine(item.Title + " is An Album");
