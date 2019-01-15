@@ -16,7 +16,17 @@ namespace MediaTypes
 
 });
 
-mediaLibrary.DisplayItems();
+                var item = mediaLibrary.findItem("Harry Potter");
+
+                if (item != null)
+                {
+                    mediaLibrary.DisplayItem(item);
+                }
+                else
+                {
+                    Console.WriteLine("item not found");
+                }
+                mediaLibrary.DisplayItems();
 
                 DetectMediaType(mediaLibrary.GetItemAt(1));
                 DetectMediaType(mediaLibrary.GetItemAt(0));

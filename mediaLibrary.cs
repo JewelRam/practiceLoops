@@ -11,6 +11,21 @@ namespace MediaTypes
             _items = items;
         }
 
+        public MediaTypes findItem(string criteria)
+        {
+            MediaTypes ItemToReturn = null;
+
+            foreach (var item in _items)
+            {
+                if (item.Title.Contains(criteria))
+                {
+                    ItemToReturn = item;
+                    break;
+                }
+            }
+
+            return ItemToReturn;
+        }
         public void DisplayItems()
         {
             for (int index = 0; index < _items.Length; index++)
